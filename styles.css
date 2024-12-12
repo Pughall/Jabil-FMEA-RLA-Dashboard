@@ -1,0 +1,59 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0057b8;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+}
+
+nav select {
+    padding: 0.5em;
+    font-size: 1em;
+}
+
+section {
+    margin: 2em;
+    padding: 2em;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #0057b8;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Ensures the table fits within the container */
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    word-wrap: break-word; /* Ensures long text wraps within the cell */
+}
+
+input[type="text"], select {
+    width: 100%;
+    box-sizing: border-box;
+}

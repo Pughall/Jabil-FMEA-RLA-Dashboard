@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jabil RLA Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Jabil RLA Library</h1>
+    </header>
+    <nav>
+        <select id="menu" onchange="navigateMenu()">
+            <option value="#rla-dashboard">RLA Dashboard</option>
+            <option value="#upload-excel">Upload Excel Files</option>
+        </select>
+    </nav>
+    <section id="rla-dashboard">
+        <h2>RLA Dashboard</h2>
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th><select id="filter-process_type" onchange="filterTable()"><option value="">All</option></select></th>
+                    <th><select id="filter-site" onchange="filterTable()"><option value="">All</option></select></th>
+                    <th><select id="filter-workcell" onchange="filterTable()"><option value="">All</option></select></th>
+                    <th><select id="filter-customer" onchange="filterTable()"><option value="">All</option></select></th>
+                    <th><select id="filter-problem_failure_mode" onchange="filterTable()"><option value="">All</option></select></th>
+                    <th><select id="filter-potential_cause_root_cause" onchange="filterTable()"><option value="">All</option></select></th>
+                    <th><select id="filter-prevention_control" onchange="filterTable()"><option value="">All</option></select></th>
+                    <th><select id="filter-detection_control" onchange="filterTable()"><option value="">All</option></select></th>
+                    <th><select id="filter-last_modified_date" onchange="filterTable()"><option value="">All</option></select></th>
+                    <th><select id="filter-last_uploaded" onchange="filterTable()"><option value="">All</option></select></th>
+                </tr>
+                <tr>
+                    <th>Process Type</th>
+                    <th>Site</th>
+                    <th>Workcell</th>
+                    <th>Customer</th>
+                    <th>Problem Failure Mode</th>
+                    <th>Potential Cause Root Cause</th>
+                    <th>Prevention Control</th>
+                    <th>Detection Control</th>
+                    <th>Last Modified Date</th>
+                    <th>Last Uploaded</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be inserted here -->
+            </tbody>
+        </table>
+    </section>
+    <section id="upload-excel">
+        <h2>Upload Excel Files</h2>
+        <form id="upload-form">
+            <input type="file" id="file-input" accept=".xlsx, .xls">
+            <button type="submit">Upload</button>
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
